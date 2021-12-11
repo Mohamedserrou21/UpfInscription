@@ -17,3 +17,6 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('acceuil');
 });
+Route::get('/pre_inscription', function () {
+    return view('pre_inscription');
+});

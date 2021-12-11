@@ -23,4 +23,7 @@ Route::get('/pre_inscription', function () {
 Route::get('/Admission', function () {
     return view('admission');
 });
+Route::get('/dashboard_upf', function () {
+    return view('adminpanel');
+});
 

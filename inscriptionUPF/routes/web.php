@@ -20,3 +20,7 @@ Route::get('/', function () {
 Route::get('/pre_inscription', function () {
     return view('pre_inscription');
 });
+Route::get('/Admission', function () {
+    return view('admission');
+});
+

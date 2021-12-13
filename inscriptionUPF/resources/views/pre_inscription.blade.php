@@ -103,8 +103,21 @@
           </div>
 
           <div class="input-box">
-            <span class="details">Nom d'établissement fréquenté :</span>
-            <input  name="etablissement" style="border-color:  #b11b81;" type="text" placeholder="Etablissement..." required>
+            <label for="1"> choisissez votre Filiere:</label><br>
+                <select name="dimplome_annee" id="6">
+                <option value="cc" selected>-------FSI----</option>
+                <option value="cc" selected>Genie Informatique</option>
+                <option value="dd">genie cevil</option>
+                <option value="ee">systeme embarque</option>
+                <option value="ff" ><option value="cc" selected>-------FBS----</option></option>
+                <option value="cc" selected>Management</option>
+                <option value="cc" selected>Finance</option>
+                <option value="dd">comptabilité</option>
+                <option value="ee">-----ESMAB------</option>
+                <option value="ee">Architecture</option>
+                <option value="ee">design interieure</option>
+                
+                </select> 
           </div>
         </div>
 		   

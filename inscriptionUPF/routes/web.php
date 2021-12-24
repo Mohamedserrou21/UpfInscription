@@ -1,7 +1,8 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
 
+use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AfficheController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -14,16 +15,27 @@ use Illuminate\Support\Facades\Route;
 */
 
 
-Route::get('/', function () {
-    return view('acceuil');
-});
-Route::get('/pre_inscription', function () {
-    return view('pre_inscription');
-});
-Route::get('/Admission', function () {
-    return view('admission');
-});
-Route::get('/dashboard_upf', function () {
-    return view('adminpanel');
-});
+// Route::get('/', function () {
+//     return view('acceuil');
+// });
+Route::get('/Acceuil',[AfficheController::class,'acceuil']);
+// Route::get('/pre_inscription', function () {
+//     return view('pre_inscription');
+// });
+Route::get('/pre_inscription',[AfficheController::class,'pre_inscription']);
 
+Route::get('/dashboard_upf',[AfficheController::class,'adminpanel']);
+
+Route::get('/Admission',[AfficheController::class,'admission']);
+
+// Route::get('/Admission', function () {
+//     return view('admission');
+// });
+// Route::get('/dashboard_upf', function () {
+//     return view('adminpanel');
+// });
+
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

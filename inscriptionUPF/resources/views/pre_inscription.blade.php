@@ -17,7 +17,8 @@
 
     <div class="title">Mon cursus scolaire Etape (1/2)</div>
     <div class="content">
-      <form action="#">
+      <form action="{{url('pre_inscription')}}" method="get">
+        @crsf
         <div class="user-details">
           <div class="input-box">
             <label for="1">Niveau d'étude actuelle :</label><br>

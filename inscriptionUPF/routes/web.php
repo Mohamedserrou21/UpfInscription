@@ -27,3 +27,6 @@ Route::get('/dashboard_upf', function () {
     return view('adminpanel');
 });
 
+Route::get('/condidat', function () {
+    return view('userpanel');
+});

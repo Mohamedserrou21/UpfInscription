@@ -84,7 +84,7 @@ Egalement l’UPF a pour mission de consolider son statut d’établissement de 
 					<p>les étudiants en Architecture, en Urbanisme, en Paysage, en Design et Architecture d’Intérieur , en Génie civil et bâtiment peuvent se côtoyer, avoir des cours mutualisés.</p>
 
 					<p style="text-align: center;">
-						<a class="button" href="#">Read More</a>
+						<a class="button" href="{{ url('/ESMAB') }}">Read More</a>
 					</p>
 				</div>
 			</div>

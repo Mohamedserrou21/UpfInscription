@@ -3,7 +3,7 @@
 <html>
 <head>
 	<title>Universite Prive De Fes</title>
-	<link rel="stylesheet" type="text/css" href="{{ url('css/style.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ url('css/esmab.css') }}">
 	<link rel="icon" type="image/png"   href= "{{ url('image/logo_upf.png') }}">
 	
  <link

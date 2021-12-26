@@ -33,3 +33,7 @@ Route::get('/FBS', function () {
     return view('fbs');
 });
 
+Route::get('/FSI', function () {
+    return view('fsi');
+});
+

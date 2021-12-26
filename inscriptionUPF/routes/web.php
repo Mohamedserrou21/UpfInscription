@@ -26,4 +26,7 @@ Route::get('/Admission', function () {
 Route::get('/dashboard_upf', function () {
     return view('adminpanel');
 });
+Route::get('/ESMAB', function () {
+    return view('esmab');
+});
 

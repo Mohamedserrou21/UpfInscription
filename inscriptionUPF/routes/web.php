@@ -29,4 +29,7 @@ Route::get('/dashboard_upf', function () {
 Route::get('/ESMAB', function () {
     return view('esmab');
 });
+Route::get('/FBS', function () {
+    return view('fbs');
+});
 

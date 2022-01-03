@@ -62,6 +62,9 @@ Route::get('/FBS', function () {
 Route::get('/FSI', function () {
     return view('fsi');
 });
+<<<<<<< HEAD
+>>>>>>> context_site
+=======
 >>>>>>> context_site
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

@@ -30,12 +30,15 @@ Route::get('/dashboard_upf',[AfficheController::class,'etudiantDashboard']);
 
 Route::get('/Admission',[AfficheController::class,'admission']);
 
-// Route::get('/Admission', function () {
-//     return view('admission');
-// });
-// Route::get('/dashboard_upf', function () {
-//     return view('adminpanel');
-// });
+ Route::get('/FSI', function () {
+     return view('fsi');
+ });
+ Route::get('/FBS', function () {
+    return view('fbs');
+});
+ Route::get('/ESMAB', function () {
+     return view('esmab');
+ });
 
 
 Auth::routes();

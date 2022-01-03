@@ -25,6 +25,8 @@ Route::get('/',[AfficheController::class,'acceuil']);
 Route::get('/pre_inscription',[AfficheController::class,'pre_inscription']);
 
 Route::get('/dashboard_upf',[AfficheController::class,'adminpanel']);
+Route::get('/dashboard_upf',[AfficheController::class,'etudiantDashboard']);
+
 
 Route::get('/Admission',[AfficheController::class,'admission']);
 

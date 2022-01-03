@@ -19,7 +19,7 @@ use Illuminate\Support\Facades\Auth;
 // Route::get('/', function () {
 //     return view('acceuil');
 // });
-Route::get('/Acceuil',[AfficheController::class,'acceuil']);
+Route::get('/',[AfficheController::class,'acceuil']);
 // Route::get('/pre_inscription', function () {
 //     return view('pre_inscription');
 // });

@@ -16,6 +16,7 @@ use Illuminate\Support\Facades\Auth;
 */
 
 
+<<<<<<< HEAD
 // Route::get('/', function () {
 //     return view('acceuil');
 // });
@@ -38,5 +39,29 @@ Route::get('/Admission',[AfficheController::class,'admission']);
 
 
 Auth::routes();
+=======
+Route::get('/', function () {
+    return view('acceuil');
+});
+Route::get('/pre_inscription', function () {
+    return view('pre_inscription');
+});
+Route::get('/Admission', function () {
+    return view('admission');
+});
+Route::get('/dashboard_upf', function () {
+    return view('adminpanel');
+});
+Route::get('/ESMAB', function () {
+    return view('esmab');
+});
+Route::get('/FBS', function () {
+    return view('fbs');
+});
+
+Route::get('/FSI', function () {
+    return view('fsi');
+});
+>>>>>>> context_site
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

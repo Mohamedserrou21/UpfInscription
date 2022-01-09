@@ -6,6 +6,7 @@
 
 	
 	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+	<link rel="icon" type="image/png"   href= "{{ url('image/logo_upf.png') }}">
 	
 	<link rel="stylesheet" href= "{{ url('css/userdashboard.css') }}">
 
@@ -24,15 +25,11 @@
 			<li class="active">
 				<a href="#">
 					<i class='bx bxs-dashboard' ></i>
-					<span class="text">Welcome (Session_Start)</span>
+					<span class="text">{{ Auth::user()->name }}</span>
+					
 				</a>
 			</li>
-			<li>
-				<a href="#">
-					<i class='bx bxs-shopping-bag-alt' ></i>
-					<span class="text">Demande D'inscription</span>
-				</a>
-			</li>
+			
 			<li>
 				<a href="#">
 					<i class='bx bxs-doughnut-chart' ></i>
@@ -56,10 +53,15 @@
 		<ul class="side-menu">
 			
 			<li>
-				<a href="#" class="logout">
+				<a href="{{ route('logout') }}" class="logout"  onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+				   
 					<i class='bx bxs-log-out-circle' ></i>
-					<span class="text">Logout</span>
+					<span class="text" >Logout</span>
 				</a>
+				<form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                        @csrf
+                                    </form>
 			</li>
 		</ul>
 	</section>
@@ -93,11 +95,11 @@
 						</li>
 						<li><i class='bx bx-chevron-right' ></i></li>
 						<li>
-							<a class="active" href="#">Welcome (Session_start)</a>
+							<a class="active" href="#">Welcome {{ Auth::user()->name }}</a>
 						</li>
 					</ul>
 				</div>
-				<a href="#" class="btn-download">
+				<a href="{{ route('pre_inscription') }}" class="btn-download">
 					<i class='bx bxs-cloud-download' ></i>
 					<span class="text">Postuler Votre Dossier</span>
 				</a>

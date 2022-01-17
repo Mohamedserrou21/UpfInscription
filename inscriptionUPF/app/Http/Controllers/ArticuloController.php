@@ -12,7 +12,11 @@ class ArticuloController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    
+    public function index()
+    {
+       
+    }
+
     /**
      * Show the form for creating a new resource.
      *
@@ -63,7 +67,10 @@ class ArticuloController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-   
+    public function edit($id)
+    {
+         
+    }
 
     /**
      * Update the specified resource in storage.
@@ -72,12 +79,28 @@ class ArticuloController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-   
+    public function update(Request $request, $id)
+    {
+    $articulo = Articulo::find($id);
+        $articulo->niveau_scolaire_actuelle = $request->get('niveau_scolaire_actuelle');
+        $articulo->annee_bac= $request->get('annee_bac');
+        $articulo->diplome = $request->get('diplome');
+        $articulo->ville= $request->get('ville');
+        $articulo->filiere_choisi = $request->get('filiere_choisi');
+        $articulo->option_bac = $request->get('option_bac');
+        $articulo->save();
+
+        return redirect('/Inscription');
+    }
+
     /**
      * Remove the specified resource from storage.
      *
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-   
+    public function destroy($id)
+    {
+       
+    }
 }

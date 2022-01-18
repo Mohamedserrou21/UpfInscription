@@ -40,7 +40,10 @@ Route::get('/Admission',[AfficheController::class,'admission']);
      return view('esmab');
  });
 
+ Route::resource('signalisation','App\Http\Controllers\MoviesController');
+
 
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::post('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

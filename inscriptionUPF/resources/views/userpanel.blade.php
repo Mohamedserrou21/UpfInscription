@@ -31,7 +31,7 @@
 			</li>
 			
 			<li>
-				<a href="/signalisation">
+				<a href="{{ route('signalisation.create') }}">
 					<i class='bx bxs-doughnut-chart' ></i>
 					<span class="text">Declarer Une signalisation</span>
 				</a>

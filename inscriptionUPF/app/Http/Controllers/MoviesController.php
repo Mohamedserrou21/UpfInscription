@@ -55,7 +55,7 @@ class MoviesController extends Controller
         $data->release_year = $request->release_year;
         $data->poster = $imageName;
         $data->save();
-        return redirect()->route('signalisation.index')->with('success', 'Movie has been added successfully.');
+        return redirect()->route('signalisation.create')->with('success', 'Movie has been added successfully.');
     }
 
     /**

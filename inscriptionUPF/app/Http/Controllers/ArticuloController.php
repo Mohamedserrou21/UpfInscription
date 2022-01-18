@@ -56,7 +56,7 @@ class ArticuloController extends Controller
 
    
 
-        return redirect('/Inscription');
+        return redirect('Inscription/create');
     }
 
     /**

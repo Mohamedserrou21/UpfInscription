@@ -20,7 +20,7 @@
         <a class="nav-link" href="{{ route('signalisation.create') }}">Add New</span></a>
       </li>
       <li class="nav-item active">
-        <a class="nav-link" href="{{ route('signalisation.create') }}">Universite Prive De Fes</span></a>
+        <a class="nav-link" href="/home">Universite Prive De Fes</span></a>
       </li>
       <li class="nav-item active">
         <a class="nav-link" href="/home">Return</span></a>

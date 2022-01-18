@@ -63,18 +63,18 @@ form .input-box span.details{
 }
 .user-details .input-box input{
   height: 45px;
-  width: 100%;
+  width: 300px;
   outline: none;
   font-size: 16px;
   border-radius: 5px;
   padding-left: 15px;
   border: 1px solid #ccc;
   border-bottom-width: 2px;
-  transition: all 0.3s ease;
+  transition: all 0.3s ease
 }
 .user-details .input-box input:focus,
 .user-details .input-box input:valid{
-  border-color: #321bb1;
+  border-color:  #b11b81;
 }
 
 
@@ -139,6 +139,17 @@ form .input-box span.details{
    margin: 15px 0;
  
  }
+
+ span a{
+  color: crimson;
+  text-decoration: none;
+  text-align: center;
+  margin-left: 470px;
+  
+}
+span a:hover{
+  text-decoration: underline;
+}
  form .button input{
    height: 36px;
    width: 250px;

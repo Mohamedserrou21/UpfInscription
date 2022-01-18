@@ -27,7 +27,7 @@ Route::get('/pre_inscription',[AfficheController::class,'pre_inscription'])->nam
 Route::get('/administration_upf',[AfficheController::class,'adminpanel']);
 Route::get('/dashboard_upf',[AfficheController::class,'etudiantDashboard']);
 
-
+Route::resource('Inscription','App\Http\Controllers\ArticuloController');
 Route::get('/Admission',[AfficheController::class,'admission']);
 
  Route::get('/FSI', function () {

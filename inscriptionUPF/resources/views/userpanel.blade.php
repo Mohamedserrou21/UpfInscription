@@ -99,7 +99,7 @@
 						</li>
 					</ul>
 				</div>
-				<a href="{{ route('pre_inscription') }}" class="btn-download">
+				<a href="Inscription/create" class="btn-download">
 					<i class='bx bxs-cloud-download' ></i>
 					<span class="text">Postuler Votre Dossier</span>
 				</a>

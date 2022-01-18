@@ -31,7 +31,7 @@
 			</li>
 			
 			<li>
-				<a href="#">
+				<a href="/signalisation">
 					<i class='bx bxs-doughnut-chart' ></i>
 					<span class="text">Declarer Une signalisation</span>
 				</a>

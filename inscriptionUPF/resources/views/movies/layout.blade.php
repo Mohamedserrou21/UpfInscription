@@ -17,9 +17,7 @@
   </button>
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav">
-      <li class="nav-item active">
-        <a class="nav-link" href="{{ route('signalisation.create') }}">Add New</span></a>
-      </li>
+      
       <li class="nav-item active">
         <a class="nav-link" href="/home">Universite Prive De Fes</span></a>
       </li>

@@ -29,7 +29,9 @@ Route::get('/dashboard_upf',[AfficheController::class,'etudiantDashboard']);
 
 Route::resource('Inscription','App\Http\Controllers\ArticuloController');
 Route::get('/Admission',[AfficheController::class,'admission']);
-
+Route::get('/ADMIN', function () {
+    return view('admin');
+});
  Route::get('/FSI', function () {
      return view('fsi');
  });

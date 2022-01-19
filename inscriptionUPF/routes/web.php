@@ -18,7 +18,7 @@ use App\Http\Controllers\AfficheController;
 // Route::get('/', function () {
 //     return view('acceuil');
 // });
-Route::get('/',[AfficheController::class,'acceuil']);
+Route::get('/',[AfficheController::class,'acceuil'])->name('acceuil');
 // Route::get('/pre_inscription', function () {
 //     return view('pre_inscription');
 // });

@@ -4,7 +4,7 @@
 <!-- <div class="shadow-lg p-3 mb-5 bg-white rounded"><h3>Contenido de INDEX</h3></div> -->
 <a href="Inscription/create" class="btn btn-primary">Ajouter un condidat</a>
 <a href="/signalisation" class="btn btn-primary">Voir les declarations</a>
-<a href="{{ route('home') }}"class="btn btn-secondary">Exit</a>
+<a href="{{ route('acceuil') }}"class="btn btn-secondary">Exit</a>
 
 <table class="table table-dark table-striped mt-4">
   <thead>

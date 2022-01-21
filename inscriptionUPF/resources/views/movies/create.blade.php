@@ -110,7 +110,7 @@
                             >
                               
                             </button>
-                            <span> <a href="{{route('acceuil')}}">Return to Home Page?</a> </span>
+                            <span> <a href="/home">Return to Home Page?</a> </span>
                         </div>
                     </div>
                 </div>

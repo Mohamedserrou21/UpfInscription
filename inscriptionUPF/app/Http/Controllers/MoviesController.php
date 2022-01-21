@@ -121,6 +121,6 @@ class MoviesController extends Controller
     {
         $movie = Movie::findOrFail($id);
         $movie->delete();
-        return redirect()->route('/signalisation')->with('success', 'Declaration has been deleted successfully.');
+        return redirect('/signalisation')->with('success', 'Declaration has been deleted successfully.');
     }
 }

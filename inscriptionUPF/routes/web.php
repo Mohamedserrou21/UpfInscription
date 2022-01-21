@@ -22,7 +22,13 @@ Route::get('/',[AfficheController::class,'acceuil'])->name('acceuil');
 // Route::get('/pre_inscription', function () {
 //     return view('pre_inscription');
 // });
-
+Route::get('/Admission',[AfficheController::class,'admission']);
+Route::get('/FBS', function () {
+    return view('fbs');
+ });
+ Route::get('/ESMAB', function () {
+     return view('esmab');
+ });
 
 Route::resource('signalisation','App\Http\Controllers\MoviesController');
  Route::group(['middleware' => 'auth'], function () {
@@ -31,17 +37,9 @@ Route::resource('signalisation','App\Http\Controllers\MoviesController');
 
 Route::get('/dashboard_upf',[AfficheController::class,'etudiantDashboard']);
 
-Route::get('/Admission',[AfficheController::class,'admission']);
 
- Route::get('/FSI', function () {
-     return view('fsi');
- });
- Route::get('/FBS', function () {
-    return view('fbs');
-});
- Route::get('/ESMAB', function () {
-     return view('esmab');
- });
+
+ 
  
  Route::resource('Inscription','App\Http\Controllers\ArticuloController');
    });
@@ -52,6 +50,10 @@ Route::group(['middleware' => ['auth','role:admin']], function () {
  Route::resource('Admin/Inscription','App\Http\Controllers\ArticuloController');
  Route::resource('Admin/signalisation','App\Http\Controllers\MoviesController');
  Route::get('/administration_upf',[AfficheController::class,'adminpanel']);
+ Route::get('/FSI', function () {
+    return view('fsi');
+});
+
 });
 
 Auth::routes();

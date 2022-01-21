@@ -30,11 +30,7 @@
 				<li><a href="#">Bienvenue sur notre site d'inscription</a></li>
 				
 			</ul>
-<<<<<<< HEAD
 			<a href="Admin/Inscription" class="xtn">Administration</a>
-=======
-			<a href="{{ url('/ADMIN') }}" class="xtn">Adminstration</a>
->>>>>>> fcbb1028fca22f02f58ec746fa4e1c323d884db5
 			<a href="{{ route('login') }}" class="xtn">Deja Condidat</a>
 			<a href="{{ route('register') }}" class="xtn">New condidat</a>
 		</nav>

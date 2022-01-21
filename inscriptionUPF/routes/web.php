@@ -37,7 +37,6 @@ Route::resource('signalisation','App\Http\Controllers\MoviesController');
 
 Route::get('/dashboard_upf',[AfficheController::class,'etudiantDashboard']);
 
-<<<<<<< HEAD
 
 
  
@@ -51,13 +50,6 @@ Route::group(['middleware' => ['auth','role:admin']], function () {
  Route::resource('Admin/Inscription','App\Http\Controllers\ArticuloController');
  Route::resource('Admin/signalisation','App\Http\Controllers\MoviesController');
  Route::get('/administration_upf',[AfficheController::class,'adminpanel']);
-=======
-Route::resource('Inscription','App\Http\Controllers\ArticuloController');
-Route::get('/Admission',[AfficheController::class,'admission']);
-Route::get('/ADMIN', function () {
-    return view('admin');
-});
->>>>>>> fcbb1028fca22f02f58ec746fa4e1c323d884db5
  Route::get('/FSI', function () {
     return view('fsi');
 });

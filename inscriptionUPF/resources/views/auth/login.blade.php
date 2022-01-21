@@ -21,7 +21,7 @@
 				<li><a href="#">Bienvenue sur notre site d'inscription</a></li>
 				
 			</ul>
-			<a href="{{ route('login') }}" class="xtn">Adminstration</a>
+			<a href="Admin/Inscription" class="xtn">Administration</a>
 			<a href="{{ route('login') }}" class="xtn">Deja Condidat</a>
 			<a href="{{ route('register') }}" class="xtn">New condidat</a>
 		</nav>

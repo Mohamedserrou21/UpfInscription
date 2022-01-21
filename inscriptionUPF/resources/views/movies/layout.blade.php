@@ -22,7 +22,7 @@
         <a class="nav-link" href="/home">Universite Prive De Fes</span></a>
       </li>
       <li class="nav-item active">
-        <a class="nav-link" href="/Inscription">Return</span></a>
+        <a class="nav-link" href="/Admin/Inscription">Return</span></a>
       </li>
     </ul>
   </div>

@@ -29,7 +29,7 @@
      <div class="title">Declarer une signalisation</div>
      <div class="content">
         <form
-            action="{{ route('signalisation.store') }}"
+            action="/signalisation"
             method="POST"
             enctype="multipart/form-data"
         >

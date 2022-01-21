@@ -30,7 +30,7 @@
     <label for="" class="form-label">option_bac </label>
     <input id="precio" name="option_bac" type="text" step="any"  value="{{ $articulo->option_bac}}"class="form-control" tabindex="3">
   </div>
-  <a href="/articulos" class="btn btn-secondary">Cancel</a>
+  <a href="/Inscription" class="btn btn-secondary">Cancel</a>
   <button type="submit" class="btn btn-primary">save</button>
 </form>
 

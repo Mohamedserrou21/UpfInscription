@@ -61,7 +61,7 @@ class ArticuloController extends Controller
    
         if(Auth::user()->hasRole('admin')){
 
-            return redirect('admin/Inscription/create');
+            return redirect('Inscription/create');
         }else{
             return redirect('Inscription/create');
         
@@ -111,7 +111,7 @@ class ArticuloController extends Controller
         
         if(Auth::user()->hasRole('admin')){
 
-            return redirect('admin/Inscription');
+            return redirect('Admin/Inscription');
         } else{
             return redirect('/Inscription');
         
@@ -131,7 +131,7 @@ class ArticuloController extends Controller
 
         if(Auth::user()->hasRole('admin')){
 
-            return redirect('admin/Inscription');
+            return redirect('Admin/Inscription');
         } else{
             return redirect('/Inscription');
         

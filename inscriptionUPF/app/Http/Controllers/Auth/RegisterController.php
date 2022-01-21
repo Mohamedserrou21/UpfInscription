@@ -70,6 +70,7 @@ class RegisterController extends Controller
                 'email' => $data['email'],
                 'password' => Hash::make($data['password']),
             ])->assignRole('admin');
+            redirect('/Inscription');
         }else{
             return User::create([
                 'name' => $data['name'],

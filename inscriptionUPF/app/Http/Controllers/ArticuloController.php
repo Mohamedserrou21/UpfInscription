@@ -6,11 +6,14 @@ use Illuminate\Http\Request;
 use App\Models\Articulo;
 
 use App\Mail\VisitorContact;
+use App\Models\User;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Session;
 
 class ArticuloController extends Controller
 {
+
     /**
      * Display a listing of the resource.
      *
@@ -32,8 +35,9 @@ class ArticuloController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function create()
-    {
-        return view('articulo.create');
+    {   
+        
+            return view('articulo.create');
     }
 
     /**
@@ -55,8 +59,13 @@ class ArticuloController extends Controller
         $articulos->save();
 
    
+        if(Auth::user()->hasRole('admin')){
 
-        return redirect('Inscription/create');
+            return redirect('Inscription/create');
+        }else{
+            return redirect('Inscription/create');
+        
+        }
     }
 
     /**
@@ -99,8 +108,14 @@ class ArticuloController extends Controller
         $articulo->filiere_choisi = $request->get('filiere_choisi');
         $articulo->option_bac = $request->get('option_bac');
         $articulo->save();
+        
+        if(Auth::user()->hasRole('admin')){
 
-        return redirect('/Inscription');
+            return redirect('Admin/Inscription');
+        } else{
+            return redirect('/Inscription');
+        
+        }
     }
 
     /**
@@ -114,7 +129,13 @@ class ArticuloController extends Controller
         $articulo = Articulo::find($id);        
         $articulo->delete();
 
-        return redirect('/Inscription');
+        if(Auth::user()->hasRole('admin')){
+
+            return redirect('Admin/Inscription');
+        } else{
+            return redirect('/Inscription');
+        
+        }
     }
 
     

@@ -3,7 +3,7 @@
     <meta charset="UTF-8">
     <title>Université privé de fes  </title>
     <link rel="stylesheet" href="{{ url('css/form.css') }}">
-    
+    <link rel="icon" type="image/png"   href= "{{ url('image/logo_upf.png') }}">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <style>
 	

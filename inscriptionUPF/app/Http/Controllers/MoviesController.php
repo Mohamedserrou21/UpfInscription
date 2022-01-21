@@ -55,7 +55,7 @@ class MoviesController extends Controller
         $data->release_year = $request->release_year;
         $data->poster = $imageName;
         $data->save();
-        return redirect()->route('signalisation.create')->with('success', 'Movie has been added successfully.');
+        return redirect('/signalisation/create')->with('success', 'Movie has been added successfully.');
     }
 
     /**
@@ -107,7 +107,7 @@ class MoviesController extends Controller
         $movie->genre = $request->genre;
         $movie->release_year = $request->release_year;
         $movie->update();
-        return redirect()->route('signalisation.index')->with('success', 'Signalisation has been updated successfully.');
+        return redirect()->route('/signalisation')->with('success', 'Signalisation has been updated successfully.');
 
     }
 
@@ -121,6 +121,6 @@ class MoviesController extends Controller
     {
         $movie = Movie::findOrFail($id);
         $movie->delete();
-        return redirect()->route('signalisation.index')->with('success', 'Declaration has been deleted successfully.');
+        return redirect('/signalisation')->with('success', 'Declaration has been deleted successfully.');
     }
 }

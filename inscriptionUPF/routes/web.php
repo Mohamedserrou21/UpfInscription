@@ -14,14 +14,6 @@ use App\Http\Controllers\AfficheController;
 |
 */
 
-
-// Route::get('/', function () {
-//     return view('acceuil');
-// });
-Route::get('/',[AfficheController::class,'acceuil'])->name('acceuil');
-// Route::get('/pre_inscription', function () {
-//     return view('pre_inscription');
-// });
 Route::get('/Admission',[AfficheController::class,'admission']);
 Route::get('/FBS', function () {
     return view('fbs');
@@ -29,6 +21,14 @@ Route::get('/FBS', function () {
  Route::get('/ESMAB', function () {
      return view('esmab');
  });
+// Route::get('/', function () {
+//     return view('acceuil');
+// });
+Route::get('/',[AfficheController::class,'acceuil'])->name('acceuil');
+// Route::get('/pre_inscription', function () {
+//     return view('pre_inscription');
+// });
+
 
 Route::resource('signalisation','App\Http\Controllers\MoviesController');
  Route::group(['middleware' => 'auth'], function () {
